@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import '../../css/UserCss/Register.css';
 import PostcodeComponent from '../../contexts/PostcodeComponent';
-import defaultProfileImage from '../../img/user.png'; // 기본 이미지 경로
+import defaultProfileImage from '../../img/register/user.png'; // 기본 이미지 경로
 
 const ProfileImageUpload = ({ setUserProImg }) => {
   const [preview, setPreview] = useState('');

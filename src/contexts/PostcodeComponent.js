@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../css/PostcodeComponent.css'; 
-
+//다음 주소 api
 const loadDaumPostcodeScript = () => {
   return new Promise((resolve, reject) => {
     const existingScript = document.getElementById('daum-postcode-script');

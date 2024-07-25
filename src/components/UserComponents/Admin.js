@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../../css/UserCss/Admin.css'; 
+import '../../css/UserCss/Admin.css';
 
 export default function Admin() {
   const [members, setMembers] = useState([]);
@@ -26,6 +26,24 @@ export default function Admin() {
 
   const handleOptionChange = (e) => {
     setSearchOption(e.target.value);
+  };
+
+  const handleDeleteMember = (userId) => {
+    axios.delete(`http://localhost:9999/members/${userId}`)
+      .then(() => {
+        setMembers(members.filter(member => member.userId !== userId));
+      })
+      .catch(error => console.error('Error deleting member:', error));
+  };
+
+  const handleRankChange = (userId, newRankNo) => {
+    axios.post(`http://localhost:9999/members/${userId}/rank`, { rankNo: newRankNo })
+      .then(() => {
+        setMembers(members.map(member => 
+          member.userId === userId ? { ...member, rankNo: newRankNo } : member
+        ));
+      })
+      .catch(error => console.error('Error updating rank:', error));
   };
 
   const filteredMembers = members.filter(member => {
@@ -68,7 +86,6 @@ export default function Admin() {
           <thead>
             <tr>
               <th>프로필</th>
-            
               <th>아이디</th>
               <th>닉네임</th>
               <th>주소</th>
@@ -80,15 +97,14 @@ export default function Admin() {
             {filteredMembers.map((member, index) => (
               <tr key={index}>
                 <td><img src={member.userProImg} alt="profile" className="profile-img" /></td>
-               
                 <td>{member.userId}</td>
                 <td>{member.userNick}</td>
                 <td>{member.userAddress}</td>
                 <td>{member.rankNo}</td>
                 <td>
-                  <button className="rank-button">올리기</button>
-                  <button className="rank-button">내리기</button>
-                  <button className="delete-button">회원 삭제</button>
+                  <button className="rank-button" onClick={() => handleRankChange(member.userId, member.rankNo + 1)}>올리기</button>
+                  <button className="rank-button" onClick={() => handleRankChange(member.userId, member.rankNo - 1)}>내리기</button>
+                  <button className="delete-button" onClick={() => handleDeleteMember(member.userId)}>회원 삭제</button>
                 </td>
               </tr>
             ))}
@@ -104,7 +120,7 @@ export default function Admin() {
         <table className="inquiries-table">
           <thead>
             <tr>
-            <th>번호</th>
+              <th>번호</th>
               <th>아이디</th>
               <th>제목</th>
               <th>내용</th>
