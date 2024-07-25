@@ -1,0 +1,71 @@
+/* board.css */
+.board-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.board-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.board-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.board-container th, .board-container td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.board-container th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.board-container tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.board-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.board-container a:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button.active {
+  background-color: #0056b3;
+  font-weight: bold;
+}
