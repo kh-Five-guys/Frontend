@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F0FCF8;
+  overflow-x: hidden; /* 가로 스크롤을 막기 위해 추가 */
+}
+
+.container {
+  margin-top: 70px;
+  text-align: center;
+  padding: 20px 10%;
+  position: relative;
+}
+
+
+
+
+
+/* section1 관리 */
+
+.section1 {
+  margin-bottom: 50px;
+  border: 1px solid #ffffff;
+  background-color: white;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  height: calc(100vh - 140px); /* 화면 높이에서 margin-top과 margin-bottom을 뺀 값 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.image-container {
+  width: 60%;
+  height: auto;
+}
+
+.section1-image {
+  width: 100%;
+  height: auto;
+  align-self: flex-end; /* 이미지가 아래쪽에 배치되도록 설정 */
+}
+
+.btn-register {
+  display: block;
+  margin: 0 200px;
+  padding: 20px 10px;
+  background-color: #00FFA8;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-register:hover {
+  background-color: #00e89b83;
+}
+
+.section1-content {
+  margin-right: 65px;
+  margin-top: 80px;
+  width: 45%;
+  text-align: center;
+  align-self: flex-start; /* 텍스트가 위쪽에 배치되도록 설정 */
+}
+
+.section1 .logo {
+  margin-right: 70px !important;
+  width: 300px !important;
+  height: auto !important;
+}
+
+.section1-content p {
+  margin-top: 25px;
+  font-size: 1.15rem;
+  text-align: center; 
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.image-container p {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.15rem;
+  text-align: center; 
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.btn-login {
+  display: block;
+  margin: 0 150px;
+  padding: 20px 30px;
+  background-color: #00FFA8;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btn-login:hover {
+  background-color: #00e89b83;
+}
+
+.section1:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+ .scroll-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00FFA8;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-button:hover {
+  background-color: #00e89b83;
+}
+
+.scroll-button.bottom {
+  bottom: 10px;
+}
+
+.scroll-button.top {
+  top: 10px;
+}
+.section1 .scroll-button{
+  bottom: 10px ;
+}
+
+
+
+
+
+/* Section 2 스타일 수정 */
+.section2 {
+  margin-bottom: 50px;
+  border: 1px solid #ffffff;
+  background-color: white;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  height: calc(100vh - 140px); /* 화면 높이에서 margin-top과 margin-bottom을 뺀 값 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0px;
+  background-color: transparent; /* 배경색 제거 */
+  border: none; /* 경계선 제거 */
+  height: calc(100vh - 140px); /* 화면 높이에서 margin-top과 margin-bottom을 뺀 값 */
+  box-shadow: none; /* 그림자 제거 */
+  margin-bottom: 0; /* 섹션 간의 여백 제거 */
+}
+
+.section3 div {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%; /* 부모 그리드 셀의 높이를 가득 채움 */
+}
+
+.section3 div:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* 추가된 슬라이더 CSS */
+.most-viewed-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.slide {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0) !important;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.most-viewed-post h3 {
+  font-size: 2.0rem;
+  margin-bottom: 10px;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.most-viewed-post h4 {
+  font-size: 1.7rem;
+  margin: 10px 0;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.most-viewed-post p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.most-viewed-post a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.most-viewed-post a:hover {
+  text-decoration: underline;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1001; /* 버튼이 슬라이더 위에 표시되도록 설정 */
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.btn-view-more {
+  background-color: #00FFA8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-view-more:hover {
+  background-color: #00e89b83;
+}
+
+/* Additional Div 1 오버레이 스타일 */
+.additional-div {
+  position: relative;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.additional-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0.5px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.108) !important;
+  color: black;
+  font-size: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.overlay h3 {
+  font-size: 2.0rem;
+  margin-bottom: 10px;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.overlay p {
+  font-weight: bold;
+  color: #8e8e8e;
+}
+
+.overlay .btn-login {
+  background-color: #00FFA8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-logout{
+  margin-top: 110px;
+  background-color: #00FFA8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 130px !important;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-logout:hover{
+
+background-color: #00e89b83;
+}
+.overlay .btn-login:hover {
+  background-color: #00e89b83;
+}
+.user-name{
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.user-nick{
+
+  font-size: 35px;
+}
+
+
+/* 팝업css */
+
+
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00FFA8;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.fixed-button:hover {
+  background-color: #00e89b83;
+}
+
+.popup {
+  position: fixed;
+  bottom: 20px; /* 하단 고정 */
+  right: 20px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1001; /* 버튼보다 위에 나타나도록 설정 */
+  width: 300px;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transform: translateY(100%); /* 초기 위치를 화면 밖으로 설정 */
+  opacity: 0;
+}
+
+.popup-active {
+  transform: translateY(0); /* 팝업을 화면 안으로 이동 */
+  opacity: 1;
+}
+
+.popup input,
+.popup textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup button {
+  font-weight: bold;
+  background-color: #00FFA8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #00e89b83;
+}
