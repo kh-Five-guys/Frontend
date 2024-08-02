@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import '../../css/UserCss/Register.css';
 import PostcodeComponent from '../../contexts/PostcodeComponent';
-import defaultProfileImage from '../../img/register/user.png'; // 기본 이미지 경로
+import defaultProfileImage from '../../img/register/user.png';
 
 const ProfileImageUpload = ({ setUserProImg }) => {
   const [preview, setPreview] = useState('');
@@ -14,7 +14,7 @@ const ProfileImageUpload = ({ setUserProImg }) => {
       const reader = new FileReader();
       reader.onload = (e) => {
         setPreview(e.target.result);
-        setUserProImg(e.target.result); // Base64 인코딩된 이미지 설정
+        setUserProImg(e.target.result);
       };
       reader.readAsDataURL(file);
     }
@@ -37,11 +37,10 @@ const ProfileImageUpload = ({ setUserProImg }) => {
   );
 };
 
-// 회원가입 컴포넌트
 function Register() {
   const [userId, setUserId] = useState('');
   const [userEmail, setUserEmail] = useState('');
-  const [userEmailProvider, setUserEmailProvider] = useState('naver.com'); // 기본 이메일 제공자 설정
+  const [userEmailProvider, setUserEmailProvider] = useState('naver.com');
   const [userPasswd, setUserPasswd] = useState('');
   const [userNick, setUserNick] = useState('');
   const [address, setAddress] = useState('');
@@ -49,7 +48,7 @@ function Register() {
   const [extraAddress, setExtraAddress] = useState('');
   const [userProImg, setUserProImg] = useState(null);
 
-  const navigate = useNavigate(); // useNavigate 훅 사용
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -62,7 +61,7 @@ function Register() {
       userPasswd,
       userNick,
       userAddress: `${address} ${extraAddress} ${detailAddress}`,
-      userProImg: userProImg || defaultProfileImage // 프로필 이미지가 없으면 기본 이미지 사용
+      userProImg: userProImg || defaultProfileImage
     };
 
     try {
@@ -76,7 +75,7 @@ function Register() {
 
       if (response.ok) {
         alert('회원가입 성공');
-        navigate('/login'); // 회원가입 성공 시 /login 경로로 리디렉션
+        navigate('/login');
       } else {
         alert('회원가입 실패');
       }
@@ -123,7 +122,6 @@ function Register() {
           extraAddress={extraAddress}
           setExtraAddress={setExtraAddress}
         />
-       
         <button type="submit">회원가입</button>
       </form>
     </div>

@@ -125,7 +125,7 @@ export default function Home() {
           </Link>
           {user ? (
             <>
-              <div className='user-name'>  <span className='user-nick'>'{user.userNick}</span> 님 안녕하세요</div>
+              <div className='user-name'>  <span className='user-nick'>'{user.userNick}'</span> 님 안녕하세요</div>
               <p>
                지금부터 동네방네의 더 다양한 기능을 사용하실수 있습니다.<br />
                이제 동네 이웃들과 채팅을 하거나,<br />

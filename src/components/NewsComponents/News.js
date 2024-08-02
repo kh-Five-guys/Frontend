@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import NewsCard from './NewsCard';
 import Pagination from './Pagination';
-import styles from '../../css/NewsCss/NewsCard.module.css';
+import styles from './Newscss/NewsCard.module.css';
 
 function News() {
     const [articles, setArticles] = useState([]);
@@ -18,7 +18,11 @@ function News() {
             const url = `https://newsapi.org/v2/everything?q=${region}&language=ko&apiKey=${apiKey}`;
             try {
                 const response = await axios.get(url);
-                setArticles(response.data.articles);
+                if (response.status === 200) {
+                    setArticles(response.data.articles);
+                } else {
+                    console.error(`뉴스를 가져오는 중 오류 발생: ${response.status} ${response.statusText}`);
+                }
             } catch (error) {
                 console.error('뉴스를 가져오는 중 오류 발생:', error);
             } finally {

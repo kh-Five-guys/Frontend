@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../css/NewsCss/Pagination.module.css'; // 모듈형 CSS 파일 경로
+import styles from './Newscss/Pagination.module.css'; // 경로 수정
 
 function Pagination({ articlesPerPage, totalArticles, paginate, currentPage }) {
     const pageNumbers = [];

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../css/NewsCss/Pagination.module.css'; 
+import styles from './Newscss/NewsCard.module.css'; // 경로 수정
 
 function NewsCard({ article }) {
     return (
