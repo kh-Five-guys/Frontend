@@ -1,0 +1,98 @@
+/* 전체 컨테이너 스타일 */
+.chat-room-container {
+    width: 1200px; /* Global CSS와 동일한 폭 */
+    max-width: 1200px; /* Global CSS와 동일한 최대 폭 */
+    height: 700px; /* Global CSS와 동일한 높이 */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex; /* Flexbox를 사용하여 레이아웃 정렬 */
+    flex-direction: column; /* Flex 방향을 세로로 설정 */
+    align-items: center; /* 수평 중앙 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+    margin: 0 auto; /* 중앙 정렬 */
+    position: relative; /* 버튼 컨테이너를 절대 위치로 조정하기 위해 */
+    margin-top: 100px;
+}
+
+/* 제목 스타일 */
+.chat-room-title {
+    text-align: center;
+    margin-bottom: 30px; /* 테이블과의 간격을 늘리기 위해 수정 */
+    color: #4CAF50; /* 제목 색상 설정 */
+}
+
+/* 테이블 컨테이너 */
+.chat-room-table-container {
+    width: 100%; /* 테이블 컨테이너가 폭을 100%로 설정 */
+    overflow-x: auto; /* 화면이 좁을 때 테이블 가로 스크롤 가능 */
+    margin-bottom: 60px; /* 버튼 컨테이너와 겹치지 않게 여백 추가 */
+}
+
+/* 테이블 스타일 */
+.chat-room-table {
+    width: 100%; /* 테이블 폭을 100%로 설정 */
+    border-collapse: collapse;
+}
+
+/* 테이블 헤더와 셀 스타일 */
+.chat-room-table th, 
+.chat-room-table td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: center; /* 가운데 정렬 추가 */
+}
+
+.chat-room-table th {
+    background-color: #4CAF50; /* 테이블 헤더의 배경 색상 설정 */
+    color: white; /* 테이블 헤더 텍스트 색상 설정 */
+}
+
+/* 입장 버튼 스타일 */
+.chat-room-table button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.chat-room-table button:hover {
+    background-color: #45a049;
+}
+
+.chat-room-table button:active {
+    background-color: #3e8e41;
+}
+
+/* 버튼 컨테이너 스타일 */
+.chat-room-button-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right; /* 버튼을 오른쪽으로 정렬 */
+}
+
+/* 버튼 스타일 */
+.chat-room-button-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.chat-room-button-container button:hover {
+    background-color: #45a049;
+}
+
+.chat-room-button-container button:active {
+    background-color: #3e8e41;
+}

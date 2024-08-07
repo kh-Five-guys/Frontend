@@ -1,0 +1,209 @@
+.login_container{
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    width: 500px;
+    height: auto;
+    background-color: white;
+    /* border: 1px solid #e5e5e5; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 회색 그림자 추가 */    
+}
+
+.login_container_form{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+}
+
+/* ================== 로고 ================== */
+.login_logo{
+    height: 80px;
+}  
+.logo_link{
+    margin-top: 30px;
+    margin-left: 160px;
+    display: inline-block;
+    width: fit-content;
+}
+/* ================== 로고 ================== */
+
+/* ================== 일반 로그인 ================== */
+.form_group{
+    font-size: 0.8em;
+    width: 100%;
+    display: flex;
+    text-align: start;
+    flex-flow: column wrap;
+}
+
+.login_input{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #d2d4d8;
+    padding-left: 10px;
+    height: 30px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.btn_login_submit{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #00ffa8;
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 34px;
+}
+
+.btn_login_submit:hover{
+    background-color: #00d48c;
+}
+/* ==============회원가입하기============== */
+.noregister a {
+    color: #00d48c; /* Set the text color to match your theme */
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer; /* Ensure the cursor is a pointer */
+  }
+  
+  .noregister a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .noregister {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add margin for spacing */
+    font-size: 0.8em; /* Font size for consistent look */
+  }
+
+/* ================== 일반 로그인 ================== */
+
+
+
+/* ================== 소개 ================== */
+.intro_1{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.intro_2{
+    margin-top: 7px;
+    font-size: 0.8em;
+}
+/* ================== 소개 ================== */
+
+
+
+
+/* ================== 글 양옆에 선 ================== */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #d2d4d8;
+}
+
+.separator-text {
+    padding: 0 10px; /* 텍스트와 선 사이 간격 */
+    font-size: 0.8em; /* 텍스트 크기 */
+    color: #6b7280; /* 텍스트 색상 */
+}
+
+
+/* ================== 글 양옆에 선 ================== */
+
+
+/* ===== 로그인 실패 ===== */
+.error_message{
+    padding-top: 15px;
+    font-weight: bold;
+    color: red;
+    font-size: 0.8em;
+}
+
+/* ==================팝업===================== */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_inner {
+  background: #F0FCF8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.popup_inner h2 {
+  margin-bottom: 20px;
+  
+}
+
+.popup_inner input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+.popup_inner button {
+    border-radius: 10px;
+    border: none;
+    background-color: #00ffa8;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+/* ==============아이디, 비밀번호 찾기=============== */
+.btn_find_id, .btn_find_password {
+    background: none; /* 배경 제거 */
+    border: none; /* 테두리 제거 */
+    color: #00d48c; /* 텍스트 색상 설정 */
+    font-size: 1em; /* 텍스트 크기 설정 */
+    cursor: pointer; /* 커서 포인터로 변경 */
+    padding: 5px 0; /* 위아래 간격 설정 */
+    text-align: center; /* 중앙 정렬 */
+    width: 100%; /* 전체 너비 사용 */
+    display: block; /* 블록 요소로 설정하여 클릭 영역 확대 */
+  }
+  
+  .btn_find_id:hover, .btn_find_password:hover {
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+  }
+  
+
+
+
+
+
+
+
+
+
+

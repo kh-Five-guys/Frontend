@@ -1,0 +1,57 @@
+/* 전체 모달 스타일 */
+.join-chat-room-modal {
+    width: 400px; /* 모달 폭 설정 */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* 화면 중앙에 위치하도록 설정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* 다른 요소들보다 위에 표시 */
+}
+
+/* 제목 스타일 */
+.join-chat-room-modal h1 {
+    text-align: center;
+    color: #4CAF50; /* 제목 색상 설정 */
+    margin-bottom: 20px; /* 입력 필드와 버튼 사이의 여백 설정 */
+}
+
+/* 입력 필드 스타일 */
+.join-chat-room-modal input {
+    width: 100%; /* 입력 필드 폭을 100%로 설정 */
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-bottom: 10px; /* 버튼과의 간격 설정 */
+    box-sizing: border-box; /* 패딩을 포함한 폭 조정 */
+}
+
+/* 버튼 스타일 */
+.join-chat-room-modal button {
+    width: 100%; /* 버튼 폭을 100%로 설정 */
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.join-chat-room-modal button:hover {
+    background-color: #45a049;
+}
+
+.join-chat-room-modal button:active {
+    background-color: #3e8e41;
+}
+
+/* 에러 메시지 스타일 */
+.join-chat-room-modal p {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

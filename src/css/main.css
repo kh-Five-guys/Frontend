@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F0FCF8;
+  overflow-x: hidden;
+  /* height: 3000px; */
+}
+
+.container {
+
+  width: 1250px;
+  margin: 0 auto;
+  margin-top: 150px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-flow: column wrap;
+  gap: 50px;
+  position: relative;
+}
+
+
+/* ====================================== */
+
+.section1{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  padding: 0 auto;
+  height: 700px;
+}
+
+.section1_div1 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 66%;
+  
+  padding-top: 30px;
+  padding-bottom: 50px;
+  /* align-items: center; */
+  /* text-align: center; */
+  display: flex;
+  flex-flow: column;
+  /* justify-content: space-between; */
+}
+
+
+.section1_div1_image{
+  width: 100%;
+  padding-bottom: 20px;
+  /* border-bottom: 1px solid black; */
+}
+.section1_div1 p{
+  margin-left: 40px;
+}
+
+.section1_div1_h{
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.section1_div1_p{
+  font-weight: bold;
+  margin: 15px 0px;
+  line-height: 25px;
+}
+
+
+.section1_div2{
+  width: 390px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.section1_div2_div1{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* padding: 20px; */
+  width: 100%;
+  height: 29.5%;
+  /* height: 500px; */
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+
+/* ====================================== */
+
+
+.section2{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  padding: 0 auto;
+  height: 400px;
+}
+
+.section2_div1, .section2_div2{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-flow: column;
+}
+
+
+.section2_div1{
+  width: 37%;
+}
+
+.section2_div2{
+  padding: 0px 30px;
+  padding-top: 30px;
+  width: 60%;
+}
+
+.section2_div2_friend{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+}
+
+.home-friend-button {
+  border-radius: 25px;
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  padding-bottom: 8px;
+  background-color: #00ffa8;
+}
+
+.home-friend-button:hover{
+  background-color: #00b97c;
+}
+
+.main-friend-image{
+  margin-top: 15px;
+  /* border: 1px solid black; */
+}
+
+
+.friendTitle{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+
+.section3{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  padding: 0 auto;
+  height: 220px;
+}
+
+.section3_div1{
+  /* padding: 10px 10px; */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%; 
+}
+
+.mainchatcss{
+  padding: 0px 30px;
+  padding-top: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.mainchatimg{
+  width: 90%;
+}
+
+.chatTitle{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.mainbold{
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/* 기본 스타일 설정 */
+.section1_div1, 
+.section1_div2_div1, 
+.section2_div1, 
+.section2_div2, 
+.section3_div1,
+.section4_div1 {
+  transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+/* hover 상태일 때의 애니메이션 */
+.section1_div1:hover, 
+.section1_div2_div1:hover, 
+.section2_div1:hover, 
+.section2_div2:hover, 
+.section3_div1:hover,
+.section4_div1:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+
+
+/* 로그인 */
+.header-welcome_message {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+
+
+.header-btn_mypage {
+  font-size: 0.8em;
+  margin-bottom: 7px;
+}
+
+.header-btn_friendmanage {
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 30px;
+  background-color: #00ffa8;
+}
+
+.header-btn_friendmanage:hover{
+  cursor: pointer;
+  background-color: #00b97c;
+}
+
+.header-btn_logout {
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 30px;
+  background-color: #E5E7EB;
+}
+
+.header-btn_logout:hover{
+  cursor: pointer;
+  background-color: #9fa1a3;
+}
+
+.header-btn_mypage:visited {
+  color: gray;
+}
+
+
+.header-login-margin{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+
+.loginalignleft1, .loginalignleft2{
+  text-align: start;
+}
+
+.loginalignleft1{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.loginalignleft2{
+  font-size: 0.85em;
+}
+
+
+.section1_logout{
+  padding: 20px 30px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+
+.loginAndRegis{
+  display: flex;
+  /* border: 1px solid black; */
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  height: 90px;
+}
+
+.header-btn_login {
+  font-weight: bold;
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+  padding: 3px 0px;
+  background-color: #E5E7EB;
+  text-decoration: none;
+  color: black;
+}
+
+.header-btn_login:hover {
+  background-color: #bababa;
+}
+
+.header-btn_register {
+  font-weight: bold;
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+  padding: 3px 0px;
+  text-decoration: none;
+  color: black;
+  background-color: #00ffa8;
+}
+
+.header-btn_register:hover {
+  background-color: #00d48c;
+}
+
+.mainuserprof{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.section1_login{
+  padding: 0px 20px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.section1_login_div1{
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.section4{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  padding: 0 auto;
+  height: 350px;
+  margin-bottom: 100px;
+}
+
+
+
+.section4_div1{
+  padding: 30px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.section4_div1_p{
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.section4_div1_p_info{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.section4_div1_p_info_item{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+
+.info_item_img {
+  margin-top: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.info_item_p {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  width: 150px;
+  /* 추가적인 스타일링이 필요하다면 여기에 추가하세요 */
+}
+
+
+
+
+  /* 팝업css  */
+  .fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00FFA8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .fixed-button:hover {
+    background-color: #00e89b83;
+  }
+  
+
+
+
+
+
+  .main-footer {
+    width: 100%;
+    /* background-color: #f8f9fa;  */
+    padding: 20px; /* 패딩 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    border-top: 1px solid #ddd; /* 상단 경계선 */
+    margin-top: 20px; 
+  }
+  
+  .main-footer_text {
+    color: #6c757d; /* 텍스트 색상 */
+    font-size: 14px; /* 글꼴 크기 */
+    margin: 5px 0; /* 텍스트 사이 여백 */
+  }

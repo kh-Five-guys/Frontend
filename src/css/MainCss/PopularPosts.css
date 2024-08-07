@@ -1,0 +1,251 @@
+.board-table {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* 테이블 레이아웃 고정 */
+  border: 1px solid #ddd; /* 테이블 외곽선 */
+}
+
+.board-table th,
+.board-table td {
+  font-size: 12px;
+  padding: 2px 8px; /* 위아래 간격을 줄임 */
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* 가로줄만 표시 */
+  border-right: 1px solid #ddd; /* 세로줄 추가 */
+}
+
+.board-table th {
+  font-weight: bold;
+  background-color: #e0f7da; /* 연한 연두색 배경색 */
+}
+
+.board-table tr:last-child td {
+  border-bottom: none; /* 마지막 행의 하단 테두리 제거 */
+}
+
+.board-table td:last-child {
+  border-right: none; /* 마지막 열의 오른쪽 테두리 제거 */
+}
+
+.board-table tr {
+  border: none;
+}
+
+.board-table tr:hover {
+  background-color: #f9f9f9; /* 마우스 오버 시 가벼운 배경색 */
+}
+
+.board-table a {
+  text-decoration: none;
+  color: inherit; /* 링크 색상을 상속 */
+}
+
+/* 특정 열의 너비를 조정하는 CSS */
+.board-table th:nth-child(1), /* 순위 열 */
+.board-table td:nth-child(1) {
+  width: 12%; /* 원하는 너비로 조정 */
+}
+
+.board-table th:nth-child(2), /* 제목 열 */
+.board-table td:nth-child(2) {
+  width: 40%; /* 원하는 너비로 조정 */
+}
+
+/* 버튼 스타일 */
+.slider-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.slider-buttons button {
+  padding: 2px 8px; /* 버튼의 위아래 간격을 줄임 */
+  margin: 0px 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: white; /* 버튼의 배경색을 흰색으로 설정 */
+}
+
+.slider-buttons button:hover {
+  background-color: #f1f1f1; /* 마우스 오버 시 가벼운 배경색 */
+}
+
+.slider-buttons button:disabled {
+  background-color: #eeeeee;
+  cursor: not-allowed;
+}
+
+
+.board-popular-top{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+
+}
+
+.popular-container{
+  height: 100%;
+  padding: 5px 5px;
+  /* border: 1px solid black; */
+}
+
+
+
+.board-popular-link {
+  /* background-color: ; */
+  font-size: 10px;
+  width: 100px;
+  padding: 5px 0px;
+  text-align: center;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  background-color: #00ffa8;
+  text-decoration: none; /* 아래줄 없애기 */
+  color: black; /* 기본 텍스트 색상 */
+}
+
+.board-popular-link:visited {
+  color: black; /* 방문 후에도 색상 유지 */
+}
+
+.board-popular-link:hover{
+  background-color: #00c986;
+}
+
+.slider-buttons button:disabled {
+  background-color: #eeeeee;
+  cursor: default; /* 금지 표시 대신 기본 커서로 변경 */
+}
+
+
+
+
+.popular-categorie-name-style {
+  width: 28px;
+  text-align: center;
+  font-size: 0.7em;
+  border-radius: 4px;
+  padding: 2px 3px;
+  margin: 0px auto;
+  
+}
+
+.popular-categorie1 { /* 서울 */
+  color: #D32F2F;
+  border: 1px solid #D32F2F;
+}
+
+.popular-categorie2 { /* 인천 */
+  color: #388E3C;
+  border: 1px solid #388E3C;
+}
+
+.popular-categorie3 { /* 경기 */
+  color: #1976D2;
+  border: 1px solid #1976D2;
+}
+
+.popular-categorie4 { /* 강원 */
+  color: #7B1FA2;
+  border: 1px solid #7B1FA2;
+}
+
+.popular-categorie5 { /* 충북 */
+  color: #F57C00;
+  border: 1px solid #F57C00;
+}
+
+.popular-categorie6 { /* 충남 */
+  color: #0288D1;
+  border: 1px solid #0288D1;
+}
+
+.popular-categorie7 { /* 전북 */
+  color: #C2185B;
+  border: 1px solid #C2185B;
+}
+
+.popular-categorie8 { /* 전남 */
+  color: #00796B;
+  border: 1px solid #00796B;
+}
+
+.popular-categorie9 { /* 경북 */
+  color: #b3840e;
+  border: 1px solid #b3840e;
+}
+
+.popular-categorie10 { /* 경남 */
+  color: #5D4037;
+  border: 1px solid #5D4037;
+}
+
+.popular-categorie11 { /* 제주 */
+  color: #388E3C;
+  border: 1px solid #388E3C;
+}
+
+.popular-categorie12 { /* 부산 */
+  color: #455A64;
+  border: 1px solid #455A64;
+}
+
+.popular-categorie13 { /* 대구 */
+  color: #8E24AA;
+  border: 1px solid #8E24AA;
+}
+
+.popular-categorie14 { /* 광주 */
+  color: #0288D1;
+  border: 1px solid #0288D1;
+}
+
+.popular-categorie15 { /* 대전 */
+  color: #D81B60;
+  border: 1px solid #D81B60;
+}
+
+.popular-categorie16 { /* 울산 */
+  color: #F57C00;
+  border: 1px solid #F57C00;
+}
+
+.popular-categorie17 { /* 세종 */
+  color: #7B1FA2;
+  border: 1px solid #7B1FA2;
+}
+
+
+.textaligncn{
+  /* text-align: center; */
+}
+
+
+.board-table th,
+.board-table td {
+  font-size: 12px;
+  padding: 2px 8px; /* 위아래 간격을 줄임 */
+  border-bottom: 1px solid #ddd; /* 가로줄만 표시 */
+}
+
+/* 제목 열은 왼쪽 정렬 */
+.board-table th:nth-child(2), /* 제목 열 */
+.board-table td:nth-child(2) {
+  text-align: left;
+}
+
+/* 나머지 열은 중앙 정렬 */
+.board-table th:nth-child(1),
+.board-table td:nth-child(1),
+.board-table th:nth-child(3),
+.board-table td:nth-child(3),
+.board-table th:nth-child(4),
+.board-table td:nth-child(4),
+.board-table th:nth-child(5),
+.board-table td:nth-child(5) {
+  text-align: center;
+}

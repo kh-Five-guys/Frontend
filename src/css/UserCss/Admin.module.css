@@ -1,0 +1,143 @@
+.adminContainer1,
+.adminContainer2 {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.adminContainer1 {
+  margin-top: 120px;
+}
+
+h1,
+h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.separator {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.separatorText {
+  font-size: 1.0em;
+  color: #8e8e8e;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchSelect {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1em;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.searchSelect:focus {
+  border-color: #00ffa8;
+  outline: none;
+}
+
+.searchInput {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.searchInput:focus {
+  border-color: #00ffa8;
+  outline: none;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: #00ffa8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.searchButton:hover {
+  background-color: #00cc88;
+}
+
+.membersTable,
+.inquiriesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.membersTable th,
+.membersTable td,
+.inquiriesTable th,
+.inquiriesTable td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.membersTable th,
+.inquiriesTable th {
+  background-color: #f0fcf8;
+}
+
+.profileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rankButton,
+.deleteButton {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.rankButton {
+  background-color: #00ffa8;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.rankButton:hover {
+  background-color: #00cc88;
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}

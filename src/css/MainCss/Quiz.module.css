@@ -1,0 +1,191 @@
+.quizContainer {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.questionSection, .scoreSection {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+    background-color: #fff;
+    border-radius: 8px;
+    
+}
+
+.scoreSection{
+    justify-content: start;
+    padding-bottom: 15px;
+}
+
+.questionCount {
+    font-size: 16px;
+
+}
+
+.questionText {
+    font-size: 16px;
+}
+
+
+
+
+.answerSection{
+    
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.answerSection button {
+    
+    /* background-color: #228ff5; */
+    /* color: white; */
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px !important;
+
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.answerSection button:hover {
+    /* background-color: #196ab6; */
+}
+
+.scoreSection p {
+    font-size: 16px;
+
+}
+
+
+
+.reviewSection {
+    width: 90%;
+    height: 90%;
+    /* border: 1px solid #bbb; */
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.correct {
+    border-left: 3px solid green;
+    
+}
+
+.incorrect {
+    border-left: 3px solid red;
+    
+}
+
+
+.questionAll{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-flow: column wrap;
+}
+
+.COR{
+    background-color: #00FFA8;
+
+}
+
+.COR:hover{
+    background-color: #00ad73;
+
+}
+
+.WRO{
+    background-color: #E5E7EB;
+}
+
+.WRO:hover{
+    background-color: #999a9d;
+}
+
+.queImg{
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center 35%;
+}
+
+.questionTitle{
+    /* border: 1px solid black; */
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-left: 15px;
+    text-align: start;
+}
+
+.restartButton{
+    background-color: #00FFA8;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.restartButton:hover{
+    background-color: #00ad73;
+    cursor: pointer;
+}
+
+
+.board_separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .board_separator::before,
+  .board_separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #8c8c8c;
+  }
+  
+  .board_separator_text {
+    padding: 0 10px; /* 텍스트와 선 사이 간격 */
+    font-size: 0.9em; /* 텍스트 크기 */
+    color: #3e3e3e; /* 텍스트 색상 */
+  }
+
+  .ansfont{
+    font-size: 14px;
+  }
+
+  .stageImage{
+    width: 25px;
+    height: 25px;
+  }
+
+  .changeemo{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+  }

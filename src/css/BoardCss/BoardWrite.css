@@ -1,0 +1,195 @@
+.write-board-write-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.write-board-write-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.write-board-write-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.write-board-write-container form input[type="text"] {
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.write-board-write-container form .ck-editor__editable {
+  min-height: 500px;
+}
+
+.write-file-input-container {
+  margin-bottom: 20px;
+}
+
+.write-file-input-label {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.write-file-input-label:hover {
+  background-color: #0056b3;
+}
+
+.write-no-files {
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #666;
+}
+
+.write-file-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.write-file-list li {
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  background-color: #f9f9f9;
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.write-file-list button {
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background-color 0.3s ease;
+}
+
+.write-file-list button:hover {
+  background-color: darkred;
+}
+
+.write-user-info {
+  
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.write-user-info label {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #333;
+}
+
+.write-form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.write-form-actions button {
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #00cb88;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.write-form-actions button:hover {
+  background-color: #00ab72;
+}
+
+.write-form-actions button[type="button"] {
+  background-color: #6c757d;
+}
+
+.write-form-actions button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+
+.write-form-title{
+  gap: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+
+.write-board-title-input {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.write-category-select {
+  width: 100px;
+  font-size: 18px;
+  /* padding: 10px; */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+}
+
+
+.write-profileImage {
+  border: 1px solid #888;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 4px;
+  margin-left: 7px;
+}
+
+
+.write-board-top {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.write-board-top::before,
+.write-board-top::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #979797;
+}
+
+.write-board-top-text {
+  padding: 0 10px; /* 텍스트와 선 사이 간격 */
+  font-size: 1.1em; /* 텍스트 크기 */
+  color: #313131; /* 텍스트 색상 */
+}

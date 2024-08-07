@@ -1,0 +1,504 @@
+.boardContainer {
+  max-width: 900px;
+  margin: 40px auto;
+  margin-top: 90px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boardContainer h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.categories {
+  margin-bottom: 20px;
+}
+
+.upCategory{
+  display: flex;
+  flex-flow: row wrap;
+  /* width: 30%; */
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.downCategory{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+/* 기존 카테고리 스타일 */
+.categoryItem {
+  cursor: pointer; 
+  padding: 2px 2px;
+  border-radius: 4px;
+  margin: 5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* 카테고리 선택 시 스타일 */
+/* 기본 선택된 카테고리 스타일 */
+.selected {
+  color: red;
+
+  font-weight: bold;
+  /* border: 2px solid white; */
+}
+
+/* 카테고리별 색상 스타일 */
+.selected.category1 {
+  color: #D32F2F;
+  border-color: #D32F2F;
+}
+
+.selected.category2 {
+  color: #388E3C;
+  border-color: #388E3C;
+}
+
+.selected.category3 {
+  color: #1976D2;
+  border-color: #1976D2;
+}
+
+.selected.category4 {
+  color: #7B1FA2;
+  border-color: #7B1FA2;
+}
+
+.selected.category5 {
+  color: #F57C00;
+  border-color: #F57C00;
+}
+
+.selected.category6 {
+  color: #0288D1;
+  border-color: #0288D1;
+}
+
+.selected.category7 {
+  color: #C2185B;
+  border-color: #C2185B;
+}
+
+.selected.category8 {
+  color: #00796B;
+  border-color: #00796B;
+}
+
+.selected.category9 {
+  color: #b3840e;
+  border-color: #b3840e;
+}
+
+.selected.category10 {
+  color: #5D4037;
+  border-color: #5D4037;
+}
+
+.selected.category11 {
+  color: #388E3C;
+  border-color: #388E3C;
+}
+
+.selected.category12 {
+  color: #455A64;
+  border-color: #455A64;
+}
+
+.selected.category13 {
+  color: #8E24AA;
+  border-color: #8E24AA;
+}
+
+.selected.category14 {
+  color: #0288D1;
+  border-color: #0288D1;
+}
+
+.selected.category15 {
+  color: #D81B60;
+  border-color: #D81B60;
+}
+
+.selected.category16 {
+  color: #F57C00;
+  border-color: #F57C00;
+}
+
+.selected.category17 {
+  color: #7B1FA2;
+  border-color: #7B1FA2;
+}
+
+
+
+
+.boardList {
+  list-style: none;
+  padding: 0;
+}
+
+.boardItem {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.boardItemTitle {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.boardItemTitle a {
+  color: black;
+  text-decoration: none;
+}
+
+.boardItemTitle a:hover {
+  color: #007bff;
+}
+
+.boardItemInfo {
+  font-size: 0.8em;
+  color: #333;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.boardItemInfo span {
+  white-space: nowrap;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination button {
+  padding: 1px 3px;
+  margin: 0 5px;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+
+.pagination button.active {
+  color: red;
+  border-bottom: 3px solid red;
+  font-weight: bold;
+}
+
+.searchBar {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchSelect {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 35px;
+  width: 60px; 
+  max-width: 100%;
+  padding: 0px 0px; 
+  font-size: 0.9em;
+}
+
+.searchBar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.searchBar button {
+  height: 35px;
+  padding-bottom: 2px;
+  width: 50px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.searchBar button:hover {
+  background-color: #f4f4f4;
+}
+
+.profileContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.profileImage {
+  border: 1px solid #888;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.nickandprofile{
+  display: flex;
+  align-items: center;
+}
+
+.boardNoAndDate{
+  color: #888;
+  font-size: 0.6em;
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  margin: 0 10px;
+  margin-bottom: 1px;
+  font-size: 1em;
+}
+
+.boardNoLink{
+  font-size: 18px;
+  margin-top: 10px; 
+  margin-bottom: 5px;
+}
+
+.statItem {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.statIcon_1, .statIcon_2, .statIcon_3 {
+  margin-right: 3px;
+}
+
+.statIcon_1{
+  height: 12px;
+}
+
+.statIcon_2{
+  margin-bottom: 2px;
+  height: 14px;
+}
+
+.statIcon_3{
+  height: 15px;
+}
+
+.nickName{
+  font-size: 0.9em;
+  color: #666;
+}
+
+.borderBottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.categorieNameStyle{
+  font-size: 0.7em;
+
+  border-radius: 4px;
+  padding: 2px 3px;
+  margin: 0px 0px;
+}
+
+.categorie1 { /* 서울 */
+  color: #D32F2F;
+  border: 1px solid #D32F2F;
+}
+
+.categorie2 { /* 인천 */
+  color: #388E3C;
+  border: 1px solid #388E3C;
+}
+
+.categorie3 { /* 경기 */
+  color: #1976D2;
+  border: 1px solid #1976D2;
+}
+
+.categorie4 { /* 강원 */
+  color: #7B1FA2;
+  border: 1px solid #7B1FA2;
+}
+
+.categorie5 { /* 충북 */
+  color: #F57C00;
+  border: 1px solid #F57C00;
+}
+
+.categorie6 { /* 충남 */
+  color: #0288D1;
+  border: 1px solid #0288D1;
+}
+
+.categorie7 { /* 전북 */
+  color: #C2185B;
+  border: 1px solid #C2185B;
+}
+
+.categorie8 { /* 전남 */
+  color: #00796B;
+  border: 1px solid #00796B;
+}
+
+.categorie9 { /* 경북 */
+  color: #b3840e;
+  border: 1px solid #b3840e;
+}
+
+.categorie10 { /* 경남 */
+  color: #5D4037;
+  border: 1px solid #5D4037;
+}
+
+.categorie11 { /* 제주 */
+  color: #388E3C;
+  border: 1px solid #388E3C;
+}
+
+.categorie12 { /* 부산 */
+  color: #455A64;
+  border: 1px solid #455A64;
+}
+
+.categorie13 { /* 대구 */
+  color: #8E24AA;
+  border: 1px solid #8E24AA;
+}
+
+.categorie14 { /* 광주 */
+  color: #0288D1;
+  border: 1px solid #0288D1;
+}
+
+.categorie15 { /* 대전 */
+  color: #D81B60;
+  border: 1px solid #D81B60;
+}
+
+.categorie16 { /* 울산 */
+  color: #F57C00;
+  border: 1px solid #F57C00;
+}
+
+.categorie17 { /* 세종 */
+  color: #7B1FA2;
+  border: 1px solid #7B1FA2;
+}
+
+
+.writeButton{
+  border: none;
+  width: 90px;
+  height: 30px;
+  background-color: #00ffa8;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.writeButton:hover{
+  background-color: #00d48c;
+}
+
+.bottomContainer{
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.sortOrder {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sortOrder label {
+  font-size: 0.9em;
+  margin-bottom: 2px;
+}
+
+.sortOrder select {
+  font-size: 0.8em;
+}
+
+.boardMainContainer {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 10px 0px;
+  padding-left: 20px;
+  height: 70px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.boardMainContainer h3,
+.boardMainContainer p {
+  position: relative;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+
+
+.board_separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.board_separator::before,
+.board_separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #d2d4d8;
+}
+
+.board_separator_text {
+  padding: 0 10px; /* 텍스트와 선 사이 간격 */
+  font-size: 0.9em; /* 텍스트 크기 */
+  color: #6b7280; /* 텍스트 색상 */
+}
+
